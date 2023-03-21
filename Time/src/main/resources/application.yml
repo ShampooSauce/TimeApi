@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Time
+server:
+  port: 8080
