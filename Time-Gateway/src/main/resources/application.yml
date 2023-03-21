@@ -1,0 +1,11 @@
+server:
+  port: 8085
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: TimeModule
+        uri: http://timecontainer:8080/
+        predicates:
+        - Path=/time/**
